@@ -185,6 +185,47 @@ section {
 }
 /* about section */
 
+
+/* about me section */
+#aboutme {
+    padding: 100px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme .box {
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme .box .title {
+    font-size: 30px;
+    color : #515769
+}
+
+#aboutme .box .content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    color : #A6A7AA;
+    font-family : 微軟正黑體, Hind, sans-serif;
+    margin-bottom: 15px;
+}
+
+#aboutme .box .content::selection {
+    color: #fff;
+    background: #17bed2;
+    text-shadow: none;
+}
+/* about me section */
+
 /* academic qualification section*/
 
 #academicQualifications{
