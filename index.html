@@ -9,17 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="header">
        <nav>
         <div class="logo">
             <img src="https://jiaweichang.github.io/biography/img/NUTC.gif" alt="">
         </div>
         <div class="menuList">
             <ul>
-                <li>Home</li>
-                <li>Academic Qualifications</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#academicQualifications">Academic Qualifications</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
        </nav>
@@ -57,6 +58,14 @@
             <img class="avatar" src="https://jiaweichang.github.io/biography/img/mockup/jwchang.jpg" alt="">
         </div>
     </section>
+    <section id="aboutme">
+        <div class="box">
+            <div class="title">About me</div>
+            <p class="content">
+                Jia-Wei Chang is an Associate Professor in Department of Computer Science and Information Engineering at National Taichung University of Science and Technology. Since January 2019, he is a Young Professionals Chair of the Institution of Engineering and Technology (IET) - Taipei Network. Since 2017, he is a consultant of NEXCOM Industry 4.0 Innovation Center. During February to July 2018, he was an adjunct assistant professor in Department of Engineering Science at National Cheng Kung University. He was a data scientist and project manager at IoT BU, Nexcom during 2016-2017. He received the Ph.D. degree from Department of Engineering Science, National Cheng Kung University in 2017. His research interests include natural language processing, internet of things, artificial intelligence, data mining, and e-learning technologies.
+            </p>
+        </div>
+    </section>
     <section id="academicQualifications">
         <div class="container">
             <div class="title">
@@ -88,9 +97,36 @@
             <div class="title">
                 work
             </div>
-            <div class="work-content">
-                Student at Taichung University of Science and Technology
+            <div class="object">
+                <div class="items">
+                    <img src="https://jiaweichang.github.io/biography/img/970x647/DLT.JPG" alt="">
+                    <h3>DLT Lab, NCKU</h3>
+                    <span>MEMBERS</span>
+                    <p>We are on a mission to build a more open, accessible and fair future with blockchain and distributed ledger technology.</p>
+                    <div class="readmore">
+                        read more
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="https://jiaweichang.github.io/biography/img/970x647/AIC.jpg" alt="">
+                    <h3>AIoT Cloud</h3>
+                    <span>CONSULTANT</span>
+                    <p>I manage the program of Basic and Industrial IoT education for industry-university cooperative project, and cohost Maker and IoT hackathons.</p>
+                    <div class="readmore">
+                        read more
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="https://jiaweichang.github.io/biography/img/970x647/SSX.png" alt="">
+                    <h3>South Star Xelerator</h3>
+                    <span>CONSULTANT</span>
+                    <p>We cohost several courses and startups campaigns, and build up the ecosystem between the senior entrepreneurs and local startups teams.</p>
+                    <div class="readmore">
+                        read more
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
     <section id="contact">
@@ -131,7 +167,7 @@
         </div>
     </footer>
     <div id="top">
-        top
+        <a href="#about">TOP</a>
     </div>
 </body>
 </html>

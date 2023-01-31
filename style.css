@@ -90,17 +90,15 @@ section {
     height: 100%;
     margin: 0 auto;
     padding-top: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 100px;
 }
 
 .title{
-    font-size: 35px;
+    font-size: 30px;
     color: #515769;
     width: 100%;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: capitalize;
 }
 
@@ -185,10 +183,51 @@ section {
 }
 /* about section */
 
+
+/* about me section */
+#aboutme {
+    padding: 100px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme .box {
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme .box .title {
+    font-size: 30px;
+    color : #515769
+}
+
+#aboutme .box .content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    color : #A6A7AA;
+    font-family : 微軟正黑體, Hind, sans-serif;
+    margin-bottom: 15px;
+}
+
+#aboutme .box .content::selection {
+    color: #fff;
+    background: #17bed2;
+    text-shadow: none;
+}
+/* about me section */
+
 /* academic qualification section*/
 
 #academicQualifications{
-    background: #fff;
+    background: #fafafa;
 }
 
 #academicQualifications .material{
@@ -216,21 +255,82 @@ section {
 /* work section */
 
 #work {
-    background: #fafafa;
+    background: #fff;
+    width: 100%;
 }
 
-#work .work-content{
-    font-size: 18px;
+#work .container .object{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#work .container .object .items{
+    width: 33%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
+#work .container .object .items img{
+    width: 360px;
+    height: auto;
+
+}
+
+#work .container .object .items h3{
+    font-size: 22px;
+    color: #515769;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#work .container .object .items h3:hover{
+    color: #999caa;
+}
+
+#work .container .object .items span{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bfc1c7;
+}
+
+#work .container .object .items p{
+    font-size: 15px;
     font-weight: 400;
     color: #a6a7aa;
-    margin-top: 10px;
+    margin-bottom: 15px;
+
 }
+
+#work .container .object .items .readmore{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #81848f;
+    cursor: pointer;
+}
+
+#work .container .object .items .readmore:after{
+    content: " - ";
+    color: #17bed2;
+}
+
+#work .container .object .items .readmore:hover{
+    color: #999caa;
+}
+
+
 
 /* work section */
 
 /*contact section*/
 
 #contact{
+    background: #fafafa;
     width: 100%;
 }
 
@@ -260,7 +360,7 @@ section {
 /* footer */
 
 footer {
-    background: #fafafa;
+    background: #fff;
     padding: 0 15px;
     width: 100%;
 }
