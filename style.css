@@ -9,6 +9,11 @@ html,body {
 }
 a {
     all : unset;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #999caa;
 }
 
 /* clear default setting */
@@ -86,11 +91,11 @@ section {
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1240px;
     height: 100%;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .title{
@@ -98,7 +103,8 @@ section {
     color: #515769;
     width: 100%;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1.4;
     text-transform: capitalize;
 }
 
@@ -224,33 +230,123 @@ section {
 }
 /* about me section */
 
-/* academic qualification section*/
+/* experience section*/
 
-#academicQualifications{
+#experience{
     background: #fafafa;
+    padding-bottom: 75px;
 }
 
-#academicQualifications .material{
-    margin-bottom: 15px;
+#experience .container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0
 }
 
-#academicQualifications .material ul{
-    margin: 0;
+#experience .container .research .research-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-#academicQualifications .material ul li{
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-#academicQualifications .material ul li a{
-    font-size: 18px;
-    font-weight: 400;
-    color: #a6a7aa;
+#experience .container .research .research-content #bluebox,#whitebox{
+    width: 236px;
+    height: 316px;
     cursor: pointer;
 }
 
-/* academic qualifications section */
+#experience .container .research .research-content #bluebox{
+   background: #17bed2;
+   color: #fff;
+   padding: 30px;
+}
+
+#experience .container .research .research-content #whitebox{
+    padding: 30px;
+ }
+
+ #experience .container .research .research-content #whitebox .icon{
+    color: #999caa;
+ }
+
+#experience .container .research .research-content .icon{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#experience .container .research .research-content .bluebox-title,.whitebox-title{
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#experience .container .research .research-content .bluebox-content,.whitebox-content{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#experience .container .research .research-content .whitebox-title{
+    color: #515769;
+}
+
+#experience .container .research .research-content .whitebox-content{
+    color: #a6a7aa;
+}
+
+/* experience publication section */
+
+#experience .container .publication .publication-title{
+    width: 100%;
+}
+
+#experience .container .publication .publication-title .subtitle{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #515769;
+    margin-bottom: 15px;
+}
+
+#experience .container .publication .publication-content{
+    width: 100%;
+}
+
+#experience .container ul{
+    list-style-type: decimal;
+    margin-bottom: 10px;
+}
+
+#experience .container p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a6a7aa;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#experience .container span{
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+}
+
+#experience .container a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #515769;
+}
+
+#experience .container a:hover{
+    color: #999caa;
+}
+
+/* experience publication section */
+
+/* experience section */
 
 /* work section */
 
@@ -259,10 +355,15 @@ section {
     width: 100%;
 }
 
+#work .container{
+    padding-bottom: 0;
+}
+
 #work .container .object{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0
 }
 
 #work .container .object .items{
@@ -303,7 +404,6 @@ section {
     font-weight: 400;
     color: #a6a7aa;
     margin-bottom: 15px;
-
 }
 
 #work .container .object .items .readmore{
@@ -323,7 +423,77 @@ section {
     color: #999caa;
 }
 
+/* work Honors section */
 
+#work .container .honors{
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0
+}
+
+#work .container .honors .honors-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #515769;
+    margin-bottom: 15px;
+}
+
+#work .container .honors .honors-content{
+    width: 100%;
+}
+
+#work .container .honors .honors-content ul{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#work .container .honors .honors-content ul li p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #a6a7aa;
+    margin-top: 0;
+}
+
+/* work academic section */
+
+#work .container .academic{
+    width: 100%;
+}
+
+#work .container .academic .academic-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #515769;
+    margin-bottom: 15px;
+}
+
+#work .container .academic .academic-content{
+    width: 100%;
+}
+
+#work .container .academic .academic-content ul{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#work .container .academic .academic-content ul li p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #a6a7aa;
+    margin-top: 0;
+}
+
+#work .container .academic .academic-content ul li p a{
+    font-size: 16px;
+    color: #515769;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#work .container .academic .academic-content ul li p a:hover{
+    color: #999caa;
+}
 
 /* work section */
 

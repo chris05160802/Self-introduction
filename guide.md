@@ -29,10 +29,18 @@
 - title h4 dark black, margin bottom 16px
 - content p light grey
 
+FINISH
+
+- 20230131 work section 60%
+- 20230201 work section 100% 
+- 20230202 experience section 100%
 
 
-
-
+- [X] about me section
+- [X] experience section
+- [X] work section
+- [] contact section
+- [] RWD @media
 
 
 
