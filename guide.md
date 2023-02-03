@@ -34,12 +34,13 @@ FINISH
 - 20230131 work section 60%
 - 20230201 work section 100% 
 - 20230202 experience section 100%
+- 20230203 contact section 100%
 
 
 - [X] about me section
 - [X] experience section
 - [X] work section
-- [] contact section
+- [X] contact section
 - [] RWD @media
 
 

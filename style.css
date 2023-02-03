@@ -6,6 +6,7 @@
 html,body {
     padding: 0;
     margin: 0;
+    max-width: 1352px;
 }
 a {
     all : unset;
@@ -47,6 +48,7 @@ header nav .logo {
 header nav .logo img {
     height: 80px;
     width: auto;
+    cursor: pointer;
 }
 
 header nav .menuList {
@@ -86,7 +88,7 @@ header nav .menuList ul li:hover:before {
 section {
     width: 100%;
     height: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
     background-color: #fff;
 }
 
@@ -501,22 +503,82 @@ section {
 
 #contact{
     background: #fafafa;
+    width: 1392px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding: 0;
+
+}
+
+#contact .container .contactme{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .container .contactme img{
     width: 100%;
+    height: 412px;
+}
+
+#contact .container .contactme .contactme-content{
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    width: 720px;
+    height: 212px;
+}
+
+#contact .container .contactme .contactme-content .title{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact .container .contactme .contactme-content .content{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 #contact .contact-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 100px 15px;
+}
+
+#contact .contact-content .top, .bottom{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 32px;
 }
 
 #contact .contact-content h4{
     color: #515769;
-    font-size: 20px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#contact .contact-content .mb-1{
+    width: 50%;
+    padding: 0 15px;
 }
 
 #contact .contact-content p{
