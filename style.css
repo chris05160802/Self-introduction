@@ -744,10 +744,6 @@ footer .package .text span:hover{
 
 /* RWD */
 
-/* phone */
-
-/* ipad */
-
 @media screen and (max-width: 991px){
     
     section{
@@ -876,9 +872,13 @@ footer .package .text span:hover{
         width: 100%;
     }
 
-    .container{
+    header nav{
         width: 100%;
-        padding: 0 10px;
+    }
+
+    .container{
+        width: 95%;
+        max-width: 750px;
         margin: 0;
     }
 
@@ -928,13 +928,50 @@ footer .package .text span:hover{
         width: 95%;
     }
 
-    #experience .research-content .topbox,.bottombox{
+    #experience .research .research-content .topbox, .bottombox{
         flex-direction: column;
         width: 100%;
     }
 
-    #experience .research-content .zoom-in-out-box,.whitebox{
+    #experience .research .research-content .bluebox,.whitebox{
+        width: 90%;
+    }
+
+    #work .container .object{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #work .container .object .items{
+        width: 90%;
+
+    }
+
+    #work .container .object .items img{
         width: 100%;
+    }
+
+    #contact .container .contactme{
+        padding-bottom: 10px;
+    }
+
+    #contact .container .contactme .contactme-content{
+        width: 100%;
+    }
+
+    #contact .container .contactme .contactme-content .content{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer .container .package .logo{
+        margin-left: 12px;
+    }
+
+    footer .container .package .text{
+        margin-right: 12px;
     }
 }
 
