@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
@@ -14,7 +15,7 @@
         <div class="logo">
             <img src="https://jiaweichang.github.io/biography/img/NUTC.gif" alt="">
         </div>
-        <div class="menuList">
+        <div class="menuList" id="menu">
             <ul>
                 <li><a href="#about">Home</a></li>
                 <li><a href="#aboutme">About</a></li>
@@ -23,105 +24,121 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="mobileMenu">
+            <div class="button">+++</div>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>
        </nav>
     </header>
     <section id="about">
-        <div class="left">
-            <p class="name">王晟耀Cheng-Yue WANG</p>
-            <p class="title">國立臺中科技大學資訊工程系 二年級學士</p>
-            <p class="description">
-                is currently a second-year student 
-                in the Department of Information Engineering 
-                at Taichung University of Science and Technology,
-                a five-year university. Currently learning Python, 
-                C++, HTML and other programming syntax.
-            </p>
-            <ul class="socialLink">
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/JiaWeiChang0608/about?lst=100000022767807%3A100000022767807%3A1530369858&section=bio">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://linkedin.com/in/jiawei-chang-381083104">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/jiaweichang/biography/tree/master/slides">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="right">
-            <img class="avatar" src="https://jiaweichang.github.io/biography/img/mockup/jwchang.jpg" alt="">
+        <div class="container">
+            <div class="left">
+                <p class="name">王晟耀Cheng-Yue WANG</p>
+                <p class="title">國立臺中科技大學資訊工程系 二年級學士</p>
+                <p class="description">
+                    Is currently a second-year student 
+                    in the Department of Information Engineering 
+                    at Taichung University of Science and Technology,
+                    a five-year university. Currently learning Python, 
+                    C++, HTML and other programming syntax.
+                </p>
+                <ul class="socialLink">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/JiaWeiChang0608/about?lst=100000022767807%3A100000022767807%3A1530369858&section=bio">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://linkedin.com/in/jiawei-chang-381083104">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/jiaweichang/biography/tree/master/slides">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img class="avatar" src="https://jiaweichang.github.io/biography/img/mockup/jwchang.jpg" alt="">
+            </div>
         </div>
     </section>
     <section id="aboutme">
-        <div class="box">
-            <div class="title">About me</div>
-            <p class="content">
-                Jia-Wei Chang is an Associate Professor in Department of Computer Science and Information Engineering at National Taichung University of Science and Technology. Since January 2019, he is a Young Professionals Chair of the Institution of Engineering and Technology (IET) - Taipei Network. Since 2017, he is a consultant of NEXCOM Industry 4.0 Innovation Center. During February to July 2018, he was an adjunct assistant professor in Department of Engineering Science at National Cheng Kung University. He was a data scientist and project manager at IoT BU, Nexcom during 2016-2017. He received the Ph.D. degree from Department of Engineering Science, National Cheng Kung University in 2017. His research interests include natural language processing, internet of things, artificial intelligence, data mining, and e-learning technologies.
-            </p>
+        <div class="container">
+            <div class="box">
+                <div class="title">About me</div>
+                <p class="content">
+                    Jia-Wei Chang is an Associate Professor in Department of Computer Science and Information Engineering at National Taichung University of Science and Technology. Since January 2019, he is a Young Professionals Chair of the Institution of Engineering and Technology (IET) - Taipei Network. Since 2017, he is a consultant of NEXCOM Industry 4.0 Innovation Center. During February to July 2018, he was an adjunct assistant professor in Department of Engineering Science at National Cheng Kung University. He was a data scientist and project manager at IoT BU, Nexcom during 2016-2017. He received the Ph.D. degree from Department of Engineering Science, National Cheng Kung University in 2017. His research interests include natural language processing, internet of things, artificial intelligence, data mining, and e-learning technologies.
+                </p>
+            </div>
         </div>
     </section>
     <section id="experience">
-        <div class="container">
-            <div class="research">
-                <div class="title">
-                    Research Fields
-                </div>
+        <div class="container research">
+            <div class="title">
+                Research Fields
+            </div>
                 <div class="research-content">
-                    <div id="bluebox">
-                        <div class="icon">
-                            <i class="fa-solid fa-rocket"></i>
+                    <div class="topbox">
+                        <div class="bluebox zoom-in-out-box">
+                            <div class="icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="bluebox-title">
+                                Artificial Intelligence
+                            </div>
+                            <div class="bluebox-content">
+                                Deep Learning technologies on Natural Language Processing, e.g., Semantic Analysis, Opinion Mining.
+                            </div>
                         </div>
-                        <div class="bluebox-title">
-                            Artificial Intelligence
-                        </div>
-                        <div class="bluebox-content">
-                            Deep Learning technologies on Natural Language Processing, e.g., Semantic Analysis, Opinion Mining.
-                        </div>
-                    </div>
-                    <div id="whitebox">
-                        <div class="icon">
-                            <i class="fa-regular fa-copy"></i>
-                        </div>
-                        <div class="whitebox-title">
-                            Data Mining
-                        </div>
-                        <div class="whitebox-content">
-                            Clustering, Classification and Asscoication Rule Learning on Data, e.g., Interesting Patterns and Insight Finding.
-                        </div>
-                    </div>
-                    <div id="bluebox">
-                        <div class="icon">
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <div class="bluebox-title">
-                            Internet of Things
-                        </div>
-                        <div class="bluebox-content">
-                            AI technologies are used in the IoT environments, e.g., Smart Home or Industrial IoT.
+                        <div class="whitebox">
+                            <div class="icon">
+                                <i class="fa-regular fa-copy"></i>
+                            </div>
+                            <div class="whitebox-title">
+                                Data Mining
+                            </div>
+                            <div class="whitebox-content">
+                                Clustering, Classification and Asscoication Rule Learning on Data, e.g., Interesting Patterns and Insight Finding.
+                            </div>
                         </div>
                     </div>
-                    <div id="whitebox">
-                        <div class="icon">
-                            <i class="fa-solid fa-medal"></i>
+                    <div class="bottombox">
+                        <div class="bluebox zoom-in-out-box">
+                            <div class="icon">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="bluebox-title">
+                                Internet of Things
+                            </div>
+                            <div class="bluebox-content">
+                                AI technologies are used in the IoT environments, e.g., Smart Home or Industrial IoT.
+                            </div>
                         </div>
-                        <div class="whitebox-title">
-                            Distributed Ledger Technology
-                        </div>
-                        <div class="whitebox-content">
-                            IOTA & Tango ID are used in Confidential Data, e.g., personal data sharing.
+                        <div class="whitebox">
+                            <div class="icon">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
+                            <div class="whitebox-title">
+                                Distributed Ledger Technology
+                            </div>
+                            <div class="whitebox-content">
+                                IOTA & Tango ID are used in Confidential Data, e.g., personal data sharing.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="publication">
+            <div class="container publication">
                 <div class="publication-title">
                     <div class="title">
                         Selected Publications
@@ -394,9 +411,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="international">
+            <div class="container international">
                 <div class="title">
                     International Conference
                 </div>
@@ -475,7 +490,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
     </section>
     <section id="work">
         <div class="container">
@@ -615,7 +629,7 @@
     <section id="contact">
         <div class="container">
             <div class="contactme">
-                <img src="https://www.wikihow.com/images/thumb/d/d9/Use-a-Computer-Mouse-Step-6-Version-3.jpg/550px-nowatermark-Use-a-Computer-Mouse-Step-6-Version-3.jpg" alt="">
+                <div class="parallax"></div>
                 <div class="contactme-content">
                     <div class="title">
                         Contact Me
@@ -656,14 +670,16 @@
         </div>
     </section>
     <footer>
-        <div class="package">
-            <div class="logo">
-                <img src="https://jiaweichang.github.io/biography/img/NUTC.gif" alt="">
-            </div>
-            <div class="text">
-                <span>Cheng-Yue WANG</span>
-                ||
-                <span> Persnal Webpage</span>
+        <div class="container">
+            <div class="package">
+                <div class="logo">
+                    <img src="https://jiaweichang.github.io/biography/img/NUTC.gif" alt="">
+                </div>
+                <div class="text">
+                    <span>Cheng-Yue WANG</span>
+                    ||
+                    <span> Persnal Webpage</span>
+                </div>
             </div>
         </div>
     </footer>

@@ -7,6 +7,7 @@ html,body {
     padding: 0;
     margin: 0;
     max-width: 1352px;
+    scroll-padding-top: 100px;
 }
 a {
     all : unset;
@@ -28,6 +29,7 @@ header {
     top: 0;
     left: 0;
     background-color: #fff;
+    -webkit-overflow-scrolling:touch;
 }
 header nav {
     width: 100%;
@@ -82,6 +84,43 @@ header nav .menuList ul li:hover:before {
     font-size: 16px;
     color: #17bed2;
 }
+
+header nav .mobileMenu{
+    margin-top: 260px;
+    background: #fff;
+}
+
+header nav .mobileMenu .button{
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+header nav .mobileMenu ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 35px;
+    display: block;
+}
+
+header nav .mobileMenu ul li{
+    color: #515769;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 12px 12px 12px 15px;
+    font-weight: 700;
+    opacity: 0.7;
+    text-transform: uppercase;
+
+}
+
+header nav .mobileMenu ul li:hover:before {
+    content : " - ";  
+    display: inline;
+    width: 10px;
+    font-size: 16px;
+}
+
 /* header section */
 
 /* all section */
@@ -90,6 +129,7 @@ section {
     height: 100%;
     padding: 0 20px;
     background-color: #fff;
+    -webkit-overflow-scrolling:touch;
 }
 
 .container{
@@ -121,6 +161,13 @@ section {
     background-color: #fafafa;
 }
 
+#about .container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fafafa;
+}
+
 #about .left {
     width: 50%;
     height: 100%;
@@ -135,12 +182,14 @@ section {
     height: 100%;
     font-size: 70px;
     color : #515769;
+    font-weight: 800;
 }
 #about .left .title {
     width: 100%;
     height: 100%;
     font-size: 25px;
     color : #A6A7AA;
+    font-weight: 400;
 }
 #about .left .description {
     width: 100%;
@@ -244,60 +293,80 @@ section {
     border-bottom: 1px solid #e0e0e0
 }
 
-#experience .container .research .research-content{
-    width: 100%;
+#experience .research .research-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 0 auto
 }
 
-#experience .container .research .research-content #bluebox,#whitebox{
-    width: 236px;
-    height: 316px;
+#experience .research .research-content .topbox, .bottombox{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#experience .research .research-content .bluebox,.whitebox{
+    width: 232px;
+    height: 265px;
     cursor: pointer;
 }
 
-#experience .container .research .research-content #bluebox{
+#experience .research .research-content .bluebox{
    background: #17bed2;
    color: #fff;
    padding: 30px;
+   animation: zoom-in-zoom-out 1s ease;
 }
 
-#experience .container .research .research-content #whitebox{
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+
+#experience .research .research-content .whitebox{
     padding: 30px;
  }
 
- #experience .container .research .research-content #whitebox .icon{
-    color: #999caa;
- }
 
-#experience .container .research .research-content .icon{
+#experience .research .research-content .icon{
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-#experience .container .research .research-content .bluebox-title,.whitebox-title{
+#experience .research .research-content .bluebox-title,.whitebox-title{
     font-size: 22px;
     line-height: 1.4;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-#experience .container .research .research-content .bluebox-content,.whitebox-content{
+#experience .research .research-content .bluebox-content,.whitebox-content{
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-#experience .container .research .research-content .whitebox-title{
+#experience .research .research-content .whitebox-title{
     color: #515769;
 }
 
-#experience .container .research .research-content .whitebox-content{
+#experience .research .research-content .whitebox-content{
     color: #a6a7aa;
 }
+
 
 /* experience publication section */
 
@@ -378,7 +447,19 @@ section {
 #work .container .object .items img{
     width: 360px;
     height: auto;
+    animation: zoom-in-zoom-out 1s ease;
+}
 
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
 }
 
 #work .container .object .items h3{
@@ -503,12 +584,12 @@ section {
 
 #contact{
     background: #fafafa;
-    width: 1392px;
+    max-width: 1392px;
+    width: 100%;
     margin-bottom: 50px;
-    margin-top: 100px;
     padding: 0;
-
 }
+
 
 #contact .container .contactme{
     position: relative;
@@ -557,7 +638,7 @@ section {
     align-items: center;
     max-width: 1240px;
     margin: 0 auto;
-    padding: 100px 15px;
+    padding: 15px 25px 15px;
 }
 
 #contact .contact-content .top, .bottom{
@@ -587,6 +668,16 @@ section {
     cursor: pointer;
 }
 
+.parallax{
+    background-image: url(https://jiaweichang.github.io/biography/img/1920x1080/01.jpg);
+    height: 412px; 
+    width: 100%;
+    /* 沒內文時可以看到的最小高度 */
+    background-attachment: fixed; /* 固定圖像 */
+    background-position: center center; /* 圖像置中 */
+    background-size : cover;
+}
+
 /* contact section */
 
 /* footer */
@@ -595,6 +686,7 @@ footer {
     background: #fff;
     padding: 0 15px;
     width: 100%;
+    -webkit-overflow-scrolling:touch;
 }
 
 footer .package{
@@ -649,3 +741,208 @@ footer .package .text span:hover{
 #top:hover{
     background: #515769;
 }
+
+/* RWD */
+
+/* phone */
+
+/* ipad */
+
+@media screen and (max-width: 991px){
+    
+    section{
+        max-width: 990px;
+        padding: 0;
+    }
+    
+    .container{
+        width: 750px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: 0 auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        margin: 0 auto;
+        width: 750px;
+    }
+    
+    header nav .menuList{
+        display: none;
+    }
+
+    #about .container .left{
+        width: 50%;
+    }
+
+    #about .container .left .name{
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    #about .container .left .title{
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    #about .container .left .description{
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    #about .container .left .socialLink{
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    #about .container .left .socialLink li{
+        font-size: 16px;
+        padding: 0 5px;
+        border-radius: 90%;
+    }
+
+    #about .container .left .socialLink li a{
+        padding: 11px;
+    }
+
+    #about .container .right img{
+        width: 90%;
+        height: auto;
+    }
+
+    #aboutme{
+        padding: 50px 0;
+    }
+
+    #experience .container .research-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experience .container .research-content .topbox, .bottombox{
+        width: 100%;
+    }
+
+    #experience .container .research-content .bluebox, .whitebox{
+        width: 50%;
+        height: 244px;
+        margin-bottom: 5px;
+    }
+
+    #work .container .object .items img{
+        width: 220px;
+    }
+
+    #contact .container .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #contact .container .contact-content .top, .bottom{
+        width: 100%;
+    }
+
+    #contact .container .contact-content .mb-1{
+        width: 50%;
+        height: 244px;
+        margin-bottom: 5px;
+        height: 50%;
+    }
+
+    footer{
+        max-width: 990px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+        max-width: 767px;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    #about{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .container .left{
+        width: 90%;
+    }
+
+    #about .container .left{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #about .container .left .socialLink{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .container .right{
+        width: 100%;
+        height: auto;
+    }
+
+    #about .container .right img{
+        width: 100%;
+        height: auto;
+    }
+
+    #experience{
+        width: 100%;
+    }
+
+    #experience .container .research-content{
+        width: 95%;
+    }
+
+    #experience .research-content .topbox,.bottombox{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #experience .research-content .zoom-in-out-box,.whitebox{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    header nav .mobileMenu{
+        display: none;
+    }
+}
+
+/* RWD */
+

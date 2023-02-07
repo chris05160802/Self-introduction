@@ -51,3 +51,16 @@ next class
 - animation
 - js -> go to top
 - menu
+
+
+
+
+20230206
+
+menu hambuger
+
+- 先寫出這個button 元件
+- css 調整它的條件在什麼viewport width出現 (menu list)
+- x) button 本身的樣式
+
+- menu list 在mobile的樣式
