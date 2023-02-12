@@ -6,7 +6,6 @@
 html,body {
     padding: 0;
     margin: 0;
-    max-width: 1352px;
     scroll-padding-top: 100px;
 }
 a {
@@ -125,9 +124,10 @@ header nav .mobileMenu ul li:hover:before {
 
 /* all section */
 section {
-    width: 100%;
+    width: 98%;
     height: 100%;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 10px;
     background-color: #fff;
     -webkit-overflow-scrolling:touch;
 }
@@ -243,7 +243,8 @@ section {
 
 /* about me section */
 #aboutme {
-    padding: 100px 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,11 +421,6 @@ section {
 /* experience section */
 
 /* work section */
-
-#work {
-    background: #fff;
-    width: 100%;
-}
 
 #work .container{
     padding-bottom: 0;
@@ -684,7 +680,6 @@ section {
 
 footer {
     background: #fff;
-    padding: 0 15px;
     width: 100%;
     -webkit-overflow-scrolling:touch;
 }
@@ -744,7 +739,7 @@ footer .package .text span:hover{
 
 /* RWD */
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1155px){
     
     section{
         max-width: 990px;
