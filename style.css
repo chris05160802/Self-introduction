@@ -687,6 +687,7 @@ footer {
 footer .package{
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-right: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -858,7 +859,7 @@ footer .package .text span:hover{
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 775px){
     body{
         max-width: 767px;
     }
