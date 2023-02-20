@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function(){
 		    navMenu.classList.remove("active");
 	    })
     );
+
+    document.querySelectorAll(".GoToTop").forEach((item) =>
+	    item.addEventListener("click", () => {
+		    hamburger.classList.remove("active");
+		    navMenu.classList.remove("active");
+	    })
+    );
     
     // Get the button
     let mybutton = document.getElementById("top");
