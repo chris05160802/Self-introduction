@@ -95,6 +95,8 @@ header nav .hamburger .bar{
     height: 4px;
     background: #666;
     margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 /* header section */
@@ -869,7 +871,7 @@ footer .package .text span:hover{
         font-size: 13px;
     }
 
-    header nav .menuList .active{
+    header nav .menuList.active{
         left: 0;
     }
 
@@ -880,7 +882,6 @@ footer .package .text span:hover{
 
     header nav .hamburger.active .bar:nth-child(2) {
 		opacity: 0;
-		/* 		display:none */
 	}
 	header nav .hamburger.active .bar:nth-child(1) {
 		transform: translatey(8px) rotate(45deg);

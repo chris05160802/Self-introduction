@@ -64,3 +64,7 @@ menu hambuger
 - x) button 本身的樣式
 
 - menu list 在mobile的樣式
+
+20230220 Question
+- 為何javascript讀不到function
+ANS:因為如果我直接引入檔案的話他會還沒載入完就執行這樣語法就會發生錯誤 所以我把javascript寫在body的下面
