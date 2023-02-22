@@ -888,9 +888,11 @@ footer .package .text span:hover{
     header nav .hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
+
 	header nav .hamburger.active .bar:nth-child(1) {
 		transform: translatey(8px) rotate(45deg);
 	}
+    
 	header nav .hamburger.active .bar:nth-child(3) {
 		transform: translatey(-8px) rotate(-45deg);
 	}
